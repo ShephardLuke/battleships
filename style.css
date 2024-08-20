@@ -1,0 +1,63 @@
+:root {
+--grid-columns: 1;
+--grid-rows: 1;
+--ships-color: #A9A9A9;
+--hit-color: red;
+--miss-color: white;
+--bg-color: #0498dd;
+--page-color: #023349;
+--outline-color: #1e78ca;
+--projection-color: #818181;
+--projection-invalid-color: #743333;
+background-color: var(--page-color);
+}
+  
+.main {
+text-align: center;
+padding-top: 25px;
+color: white;
+}
+
+.grid {
+display: grid;
+justify-content: center;
+grid-template-rows: repeat(var(--grid-rows), 25px);
+grid-template-columns: repeat(var(--grid-columns), 25px);
+padding-top: 25px;  
+}
+
+.grid-blank {
+border: 1px solid var(--outline-color);
+text-align: center;
+color: white;
+background-color: var(--bg-color);
+}
+
+.grid-ship {
+border: 1px solid var(--outline-color);
+background-color: var(--ships-color);
+}
+
+.grid-hit {
+border: 1px solid var(--outline-color);
+background-color: var(--hit-color);
+}
+
+.grid-miss {
+border: 1px solid var(--outline-color);
+background-color: var(--miss-color);
+}
+
+.grid-projection {
+    border: 1px solid var(--outline-color);
+    background-color: var(--projection-color);
+}
+
+.grid-projection-invalid {
+    border: 1px solid var(--outline-color);
+    background-color: var(--projection-invalid-color);
+}
+  
+  
+  
+  

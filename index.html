@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Battleships</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="menu" class="main">
+		<h1 class="main" style="padding-bottom:100px;">BATTLESHIPS</h1>
+		<button onClick="onePlayer()">PLAY</button>
+    </div>
+    <div id="setup" class="main" style="display:none;">
+      <h3 class="main">BATTLESHIPS - SETUP</h3>
+      <div id="setupGrid" class="grid" style="padding-bottom:25px;"></div>
+      <p id="setupResult" class="main">Click points on the grid to draw ships. Right click a ship to destroy it.<p>
+      <p id="setupNeed" class="main">Ships left to place: <p>
+      <button id="playButton" onClick="setupComplete()" style:"display:none">PLAY!</button>
+    </div>
+    <div id="game" style="display:none;">
+      <h3 class="main">BATTLESHIPS</h3>
+      <div id="shootGrid" class="grid"></div>
+      <div id="result" class="main">It is your turn. Click a space on the grid to shoot.</div>
+      <div id="shipGrid" class="grid"></div>
+    </div>
+    <script src="styleHandler.js"></script>
+    <script src="gridHandler.js"></script>
+    <script src="gameHandler.js"></script>
+    <script src="enemyHandler.js"></script>
+    <script src="playerHandler.js"></script>
+    <script src="setupHandler.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
