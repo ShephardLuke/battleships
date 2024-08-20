@@ -50,7 +50,7 @@ There are 3 "modes" which the CPU switches between depending on if it has found 
 
 *No empty sqaures either side of a line can only occur if the player has ships side by side in parallel. The switch to destory mode will allow the CPU to not get stuck and hit those ships in the other axis.
 
-This CPU method can be greatly improved upon as randomness is not the best way to find ships, it would be worth improving one day
+This CPU method can be greatly improved upon as randomness is not the best way to find ships, it would be worth improving one day.
 
 # Related
 A good website I found showcasing different CPU methods in battleships, which inspired my CPU method:
